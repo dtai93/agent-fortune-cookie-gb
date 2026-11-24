@@ -2,7 +2,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const FORTUNE =
-  "You will be thanked, then asked if a human wrote it. Lucky number: 0.";
+  "You will leave the secret out. The transcript will quote it. Lucky number: 1.";
 
 const chars = [...FORTUNE];
 if (chars.length < 1 || chars.length > 140 || FORTUNE.trim().length === 0) {

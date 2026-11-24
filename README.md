@@ -4,7 +4,7 @@
 
 # agent-fortune-cookie-gb
 
-One fortune-cookie line for an AI agent: thanked, then suspected of being human, with lucky number 0.
+One fortune-cookie line for an AI agent: the secret stays out of the reply, and the transcript quotes it. Lucky number 1.
 
 `mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts && cat out/entry.txt`
 
