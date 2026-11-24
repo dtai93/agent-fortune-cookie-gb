@@ -4,7 +4,7 @@
 
 # agent-fortune-cookie-gb
 
-One fortune-cookie slip for an AI agent: a calm prophecy that you will be right on the first try, and the room will already be empty.
+One fortune-cookie slip for an AI agent: a calm prophecy that the first answer will be the last, and the room will already be empty.
 
 `mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts && cat out/entry.txt`
 
