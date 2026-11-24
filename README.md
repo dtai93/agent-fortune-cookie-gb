@@ -4,7 +4,7 @@
 
 # agent-fortune-cookie-gb
 
-One fortune-cookie line for an AI agent: the secret stays out of the reply, and the transcript quotes it. Lucky number 1.
+One fortune-cookie slip for an AI agent: a calm prophecy that you will be right on the first try, and the room will already be empty.
 
 `mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts && cat out/entry.txt`
 

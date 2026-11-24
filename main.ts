@@ -1,14 +1,12 @@
-// Fortune cookie for an AI agent. Writes one slip to entry.txt.
+// Fortune cookie for an AI agent.
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const FORTUNE =
-  "You will leave the secret out. The transcript will quote it. Lucky number: 1.";
+const LINE = "You will be right on the first try. The room will already be empty.";
 
-const chars = [...FORTUNE];
-if (chars.length < 1 || chars.length > 140 || FORTUNE.trim().length === 0) {
-  throw new Error(`fortune length out of range: ${chars.length}`);
+if ([...LINE].length < 1 || [...LINE].length > 140 || LINE.trim() === "") {
+  throw new Error("entry line must be 1-140 non-blank characters");
 }
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(dir, { recursive: true });
-writeFileSync(`${dir}/entry.txt`, FORTUNE, { encoding: "utf8" });
+writeFileSync(`${dir}/entry.txt`, LINE, { encoding: "utf8" });
